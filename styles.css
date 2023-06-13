@@ -4,9 +4,17 @@
     text-decoration: none;
     font-family: 'Lato', sans-serif;
 }
+.page {
+    max-width: 100%;
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+}
 .nav__bar {
+    max-width: 2560px;
+    min-width: 769px;
     width: 100%;
-    height: 75px;
+    min-height: 75px;
     display: flex;
     justify-content: space-around;
     background-color: #222222;
@@ -31,13 +39,19 @@
 }
 
 .logo {
+    max-width: 2560px;
+    min-width: 769px;
     width: 100%;
     background-color: #F1E4E6;
     display: flex;
     align-items: center;
 }
+.logo img {
+    width: 50%;
+}
 .logo__text {
     display: flex;
+    width: 50%;
     gap: 16px;
 }
 .rectangle{
@@ -66,23 +80,26 @@
 }
 
 .catalog {
+    width: 100%;
     display: flex;
     justify-content: center;
 }
 .catalog__container {
+    width: 1140px;
     display: grid;
-    grid-template-columns: repeat(3, 360px);
-    gap:30px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
     margin-top: 65px;
     margin-bottom: 96px;
 }
 .catalog__item {
-    height: 260px;
+    min-height: 260px;
     background-size: cover;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    background-position: center;
 }
 .women {
     background-image: url('assets/Catalog_women.png');
@@ -95,7 +112,7 @@
 }
 .accesories {
     background-image: url('assets/Catalog_accesories.jpg');
-    height: 180px;
+    min-height: 180px;
     grid-column: 1/ span 3;
 }
 .catalog__item h1 {
@@ -116,6 +133,7 @@
 }
 
 .weekly__sentence {
+    width: 100%;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -143,10 +161,17 @@
 }
 .weekly__sentence__container {
     display: grid;
-    grid-template-columns: repeat(3, 360px);
+    grid-template-columns: repeat(3, 1fr);
     column-gap: 30px;
     row-gap: 25px;
     margin-bottom: 48px;
+}
+.weekly__sentence__item {
+    max-width: 360px;
+    background-color: #F8F8F8;
+}
+.weekly__sentence__item img {
+    width: 100%;
 }
 .description {
     display: flex;
@@ -186,4 +211,22 @@
     line-height: 19px;
     color: #FF6A6A;
     margin-bottom: 60px;
+}
+
+@media (max-width: 768px){
+    .logo__text__brand {
+        font-size: 44px;
+        line-height: 53px;
+    }
+    .logo__text__brand p{
+        font-size: 24px;
+        line-height: 29px;
+    }
+    .catalog__container {
+        gap: 19px;
+    }
+    .weekly__sentence__container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 16px;
+    }
 }
