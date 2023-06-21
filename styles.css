@@ -49,6 +49,7 @@
     flex-direction: column;
     gap: 20px;
     top: 30px;
+    right: 0px;
 }
 .dropdown__menu:hover .dropdown__menu__container{
     display: flex;
@@ -437,7 +438,7 @@
     }
 }
 @media (max-width: 767px){
-    .nav__bar__nav a {
+    .header__nav__none {
         display: none;
     }
     .logo img {
@@ -501,5 +502,12 @@
     }
     .footer__nav {
         margin-top: 43px;
+    }
+    .dropdown__nav {
+        display: none;
+    }
+    .dropdown__menu__container {
+        gap: 10px;
+        width: 100px;
     }
 }
