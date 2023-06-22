@@ -1,4 +1,34 @@
-* {
+
+ @-webkit-keyframes scale-up-bottom {
+    0% {
+      -webkit-transform: scale(0.5);
+              transform: scale(0.5);
+      -webkit-transform-origin: 50% 100%;
+              transform-origin: 50% 100%;
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+      -webkit-transform-origin: 50% 100%;
+              transform-origin: 50% 100%;
+    }
+  }
+  @keyframes scale-up-bottom {
+    0% {
+      -webkit-transform: scale(0.5);
+              transform: scale(0.5);
+      -webkit-transform-origin: 50% 100%;
+              transform-origin: 50% 100%;
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+      -webkit-transform-origin: 50% 100%;
+              transform-origin: 50% 100%;
+    }
+  }
+  
+*{
     margin: 0;
     padding: 0;
     text-decoration: none;
@@ -96,6 +126,11 @@
     display: flex;
     width: 50%;
     gap: 16px;
+
+}
+.scale-up-bottom {
+	-webkit-animation: scale-up-bottom 0.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+	animation: scale-up-bottom 0.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
 }
 .rectangle{
     width: 12px;
@@ -142,6 +177,7 @@
     justify-content: center;
     flex-direction: column;
     background-position: center;
+    transition: 0.5s;
 }
 .women {
     background-image: url('assets/Catalog_women.png');
@@ -156,6 +192,9 @@
     background-image: url('assets/Catalog_accesories.jpg');
     min-height: 180px;
     grid-column: 1/ span 3;
+}
+.catalog__item:hover {
+    transform: scale(1.2);
 }
 .catalog__item h1 {
     font-style: normal;
@@ -173,7 +212,6 @@
     text-align: center;
     color: #F16D7F;
 }
-
 .weekly__sentence {
     width: 100%;
     display: flex;
@@ -370,6 +408,7 @@
     border: none;
     background-color: #E1E1E1;
     padding-left: 22px;
+    padding-right: 22px;
 }
 .subscribe__button button{
     width: 30%;
