@@ -465,9 +465,12 @@ summary::-webkit-details-marker {
         font-size: 14px;
         font-weight: 300;
         color: $welded-Iron;
-        &.fieryFlamingo {
-            color: $fieryFlamingo;
-        }
+    }
+    &__link:not(:last-child):after {
+        content: '\/';
+    } 
+    &__link:last-child {
+        color: $fieryFlamingo;
     }
 }
 .featured-image {

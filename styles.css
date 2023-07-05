@@ -544,7 +544,10 @@ summary::-webkit-details-marker {
   font-weight: 300;
   color: #6F6E6E;
 }
-.bread-crumb__link.fieryFlamingo {
+.bread-crumb__link:not(:last-child):after {
+  content: "/";
+}
+.bread-crumb__link:last-child {
   color: #F16D7F;
 }
 
