@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <title>Product</title>
+    <title>Cart</title>
 </head>
 <body>
     <div class="page">
@@ -101,107 +101,84 @@
                 <header class="bread-crumb__header">
                     <h1>NEW ARRIVALS</h1>
                 </header>
-                <div class="bread-crumb__wrapper">
-                    <a class="bread-crumb__link" href="index.html">HOME / </a> 
-                    <a class="bread-crumb__link" href="">MEN / </a> 
-                    <a class="bread-crumb__link fieryFlamingo" href="">NEW ARRIVALS</a> 
+            </div>
+        </div>
+        <div class="cart">
+            <div class="cart__container">
+                <div class="cart__merchendies">
+                    <img src="./assets/img3.png" alt="merchendies" width="260">
+                    <div class="cart__merchendies-cross">
+                        <div></div>
+                        <div></div>
+                    </div>
+                    <div class="cart__merchendies-info">
+                        <h1>MANGO  PEOPLE  T-SHIRT</h1>
+                        <ul>
+                            <li>Price:
+                                <span class="fieryFlamingo">$300</span>
+                            </li>
+                            <li>Color:
+                                <span>Red</span>
+                            </li>
+                            <li>Size:
+                                <span>XL</span>
+                            </li>
+                            <li>Quantity:
+                                <input type="number" max="5" min="1" value="5"/>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="cart__merchendies">
+                    <img src="./assets/catalog6.png" alt="merchendies" width="260">
+                    <div class="cart__merchendies-cross">
+                        <div></div>
+                        <div></div>
+                    </div>
+                    <div class="cart__merchendies-info">
+                        <h1>MANGO  PEOPLE  T-SHIRT</h1>
+                        <ul>
+                            <li>Price:
+                                <span class="fieryFlamingo">$300</span>
+                            </li>
+                            <li>Color:
+                                <span>Red</span>
+                            </li>
+                            <li>Size:
+                                <span>XL</span>
+                            </li>
+                            <li>Quantity:
+                                <input type="number" max="5" min="1" value="5"/>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="cart__buttons">
+                    <button>CLEAR SHOPPING CART</button>
+                    <button>CONTINUE SHOPPING</button>
+                </div>
+            </div>
+            <div class="cart__form">
+                <div class="cart__form-user">
+                    <h1>SHIPPING ADRESS</h1>
+                    <input type="text" placeholder="Bangladesh">
+                    <input type="text" placeholder="State">
+                    <input type="text" placeholder="Postcode / Zip">
+                    <button>GET A QUOTE</button>
+                </div>
+                <div class="cart__form-checkout">
+                    <p class="cart__form-checkout-sub">SUB TOTAL
+                        <span>$900</span>
+                    </p>
+                    <p class="cart__form-checkout-grand">GRAND TOTAL
+                        <span class="fieryFlamingo">$900</span>
+                    </p>
+                    <div class="cart__form-checkout-line"></div>
+                    <button>PROCEED TO CHECKOUT</button>
                 </div>
             </div>
         </div>
-        <div class="featured-image">
-            <div class="featured-image__button">
-                <svg width="31" height="31" viewBox="0 0 31 31" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M21.6998 7.7499L13.9498 15.4999L21.6998 23.2499L20.1498 26.3499L9.2998 15.4999L20.1498 4.6499L21.6998 7.7499Z" fill="black"/>
-                </svg>   
-            </div>
-            <img src="./assets/Layer_product.png" alt="image" width="600">
-            <div class="featured-image__button">
-                <svg width="31" height="31" viewBox="0 0 31 31" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M9.2998 23.2499L17.0498 15.4999L9.2998 7.7499L10.8498 4.6499L21.6998 15.4999L10.8498 26.3499L9.2998 23.2499Z" fill="black"/>
-                </svg>
-            </div>
-        </div>
-        <div class="collection">
-            <div class="women-collection">
-                <div class="women-collection__description">
-                    <h1>WOMEN COLLECTION</h1>
-                    <div class="women-collection__line"></div>
-                    <h2>MOSCHINO CHEAP AND CHIC</h2>
-                    <p>Compellingly actualize fully researched processes before proactive outsourcing. Progressively syndicate collaborative architectures before cutting-edge services. Completely visualize parallel core competencies rather than exceptional portals. </p>
-                    <span>$561</span>
-                </div>
-                <div class="women-collection__options">
-                    <span class="women-collection__options__item">
-                        CHOOSE COLOR
-                        <img src="./assets/vector.svg" alt="vector">
-                    </span>
-                    <span class="women-collection__options__item">
-                        CHOOSE SIZE 
-                        <img src="./assets/vector.svg" alt="vector">
-                    </span>
-                    <span class="women-collection__options__item">
-                        QUANTITY
-                        <img src="./assets/vector.svg" alt="vector">
-                    </span>
-                </div>
-                <button>
-                    <svg width="32" height="29" viewBox="0 0 32 29" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M26.2009 29C25.5532 28.9738 24.9415 28.6948 24.4972 28.2227C24.0529 27.7506 23.8114 27.1232 23.8245 26.475C23.8376 25.8269 24.1043 25.2097 24.5673 24.7559C25.0303 24.3022 25.6527 24.048 26.301 24.048C26.9493 24.048 27.5717 24.3022 28.0347 24.7559C28.4977 25.2097 28.7644 25.8269 28.7775 26.475C28.7906 27.1232 28.549 27.7506 28.1047 28.2227C27.6604 28.6948 27.0488 28.9738 26.401 29H26.2009ZM6.75293 26.32C6.75293 25.79 6.91011 25.2718 7.20459 24.8311C7.49907 24.3904 7.91764 24.0469 8.40735 23.844C8.89705 23.6412 9.43594 23.5881 9.95581 23.6915C10.4757 23.7949 10.9532 24.0502 11.328 24.425C11.7028 24.7998 11.9581 25.2773 12.0615 25.7972C12.1649 26.317 12.1118 26.8559 11.9089 27.3456C11.7061 27.8353 11.3626 28.2539 10.9219 28.5483C10.4812 28.8428 9.96304 29 9.43298 29C9.08087 29.0003 8.73212 28.9311 8.40674 28.7966C8.08136 28.662 7.78569 28.4646 7.53662 28.2158C7.28755 27.9669 7.09001 27.6713 6.9552 27.3461C6.82039 27.0208 6.75098 26.6721 6.75098 26.32H6.75293ZM10.553 20.686C10.2935 20.6868 10.0409 20.6024 9.83411 20.4457C9.62727 20.2891 9.47758 20.0689 9.40796 19.819L4.57495 2.36401H1.18201C0.868521 2.36401 0.567859 2.23947 0.346191 2.01781C0.124523 1.79614 0 1.49549 0 1.18201C0 0.868519 0.124523 0.567873 0.346191 0.346205C0.567859 0.124537 0.868521 5.81268e-06 1.18201 5.81268e-06H5.46301C5.7225 -0.00080736 5.97504 0.0837201 6.18176 0.240568C6.38848 0.397416 6.53784 0.617884 6.60693 0.868006L11.4399 18.323H24.6179L29.001 8.27501H14.401C14.2428 8.27961 14.0854 8.25242 13.9379 8.19507C13.7904 8.13771 13.6559 8.05134 13.5424 7.94108C13.4288 7.83082 13.3386 7.69891 13.277 7.55315C13.2154 7.40739 13.1836 7.25075 13.1836 7.0925C13.1836 6.93426 13.2154 6.77762 13.277 6.63186C13.3386 6.4861 13.4288 6.35419 13.5424 6.24393C13.6559 6.13367 13.7904 6.0473 13.9379 5.98994C14.0854 5.93259 14.2428 5.90541 14.401 5.91001H30.814C31.0097 5.90996 31.2022 5.95866 31.3744 6.05172C31.5465 6.14478 31.6928 6.27926 31.7999 6.44301C31.9078 6.60729 31.9734 6.79569 31.9908 6.99145C32.0083 7.18721 31.9771 7.38424 31.9 7.565L26.495 19.977C26.4026 20.1876 26.251 20.3668 26.0585 20.4927C25.866 20.6186 25.641 20.6858 25.411 20.686H10.553Z" fill="#F16D7F"/>
-                    </svg>
-                    Add to Cart
-                </button>
-            </div>
-            <div class="collection__items">
-                <article class="collection__items__item">
-                    <div class="collection__items__item-container">
-                        <div class="collection__items__add">
-                            <img src="assets/cart.svg" alt="">
-                            <label>Add to Cart</label>
-                        </div>
-                        <img class="collection__items__img" src="assets/img2.png" alt="img">
-                    </div>
-                    <div class="collection__items__description">
-                        <h2>ELLERY X M'O CAPSULE</h2>
-                        <p>
-                            Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.
-                        </p>
-                        <span>$52.00</span>
-                    </div>
-                </article>
-                <article class="collection__items__item">
-                    <div class="collection__items__item-container">
-                        <div class="collection__items__add">
-                            <img src="assets/cart.svg" alt="">
-                            <label>Add to Cart</label>
-                        </div>
-                        <img class="collection__items__img" src="assets/img5.png" alt="img">
-                    </div>
-                    <div class="collection__items__description">
-                        <h2>ELLERY X M'O CAPSULE</h2>
-                        <p>
-                            Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.
-                        </p>
-                        <span>$52.00</span>
-                    </div>
-                </article>
-                <article class="collection__items__item">
-                    <div class="collection__items__item-container">
-                        <div class="collection__items__add">
-                            <img src="assets/cart.svg" alt="">
-                            <label>Add to Cart</label>
-                        </div>
-                        <img class="collection__items__img" src="assets/img6.png" alt="img">
-                    </div>
-                    <div class="collection__items__description">
-                        <h2>ELLERY X M'O CAPSULE</h2>
-                        <p>
-                            Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.
-                        </p>
-                        <span>$52.00</span>
-                    </div>
-                </article>
-            </div>
-        </div>
+
         <div class="subscribe">
             <div class="subscribe__back"></div>
             <div class="subscribe__description">
@@ -220,6 +197,16 @@
         <footer class="footer">
             <span>© 2021  Brand  All Rights Reserved.</span>
             <div class="footer__nav">
+                <a class="footer__svg" href="#">
+                    <svg class="svg" width="9" height="15" viewBox="0 0 9 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8.08836 8.28L8.50686 5.61602H5.89022V3.88729C5.89022 3.15848 6.25574 2.44806 7.42765 2.44806H8.61722V0.179975C8.61722 0.179975 7.53772 0 6.50561 0C4.35073 0 2.9422 1.27593 2.9422 3.5857V5.61602H0.546875V8.28H2.9422V14.72H5.89022V8.28H8.08836Z" fill="black"/>
+                    </svg>                        
+                </a>
+                <a class="footer__svg" href="#">
+                    <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8.13677 3.68165C6.02163 3.68165 4.31555 5.38497 4.31555 7.49669C4.31555 9.60841 6.02163 11.3117 8.13677 11.3117C10.2519 11.3117 11.958 9.60841 11.958 7.49669C11.958 5.38497 10.2519 3.68165 8.13677 3.68165ZM8.13677 9.97696C6.76991 9.97696 5.65248 8.86466 5.65248 7.49669C5.65248 6.12872 6.76658 5.01642 8.13677 5.01642C9.50695 5.01642 10.6211 6.12872 10.6211 7.49669C10.6211 8.86466 9.50363 9.97696 8.13677 9.97696V9.97696ZM13.0056 3.5256C13.0056 4.02032 12.6065 4.41544 12.1143 4.41544C11.6188 4.41544 11.223 4.017 11.223 3.5256C11.223 3.03419 11.6221 2.63575 12.1143 2.63575C12.6065 2.63575 13.0056 3.03419 13.0056 3.5256ZM15.5364 4.42872C15.4799 3.23673 15.2072 2.18087 14.3325 1.31095C13.4612 0.441028 12.4036 0.168762 11.2097 0.108997C9.9792 0.03927 6.29101 0.03927 5.0605 0.108997C3.8699 0.165442 2.81233 0.437707 1.93768 1.30763C1.06302 2.17755 0.793639 3.23341 0.733776 4.4254C0.663937 5.65392 0.663937 9.33614 0.733776 10.5647C0.790313 11.7567 1.06302 12.8125 1.93768 13.6824C2.81233 14.5524 3.86658 14.8246 5.0605 14.8844C6.29101 14.9541 9.9792 14.9541 11.2097 14.8844C12.4036 14.8279 13.4612 14.5557 14.3325 13.6824C15.2039 12.8125 15.4766 11.7567 15.5364 10.5647C15.6063 9.33614 15.6063 5.65724 15.5364 4.42872V4.42872ZM13.9468 11.8828C13.6874 12.5336 13.1852 13.035 12.53 13.2973C11.5489 13.6858 9.22094 13.5961 8.13677 13.5961C7.05259 13.5961 4.72128 13.6824 3.74353 13.2973C3.09169 13.0383 2.58951 12.5369 2.32678 11.8828C1.93768 10.9033 2.02747 8.57911 2.02747 7.49669C2.02747 6.41427 1.941 4.08673 2.32678 3.11056C2.58619 2.45978 3.08837 1.95841 3.74353 1.69611C4.72461 1.30763 7.05259 1.39728 8.13677 1.39728C9.22094 1.39728 11.5523 1.31095 12.53 1.69611C13.1818 1.95509 13.684 2.45646 13.9468 3.11056C14.3359 4.09005 14.2461 6.41427 14.2461 7.49669C14.2461 8.57911 14.3359 10.9067 13.9468 11.8828Z" fill="black"/>
+                    </svg>
+                </a>
                 <a class="footer__svg" href="#">
                     <svg width="13" height="16" viewBox="0 0 13 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M6.7402 0.203125C3.55552 0.203125 0.408081 2.34063 0.408081 5.8C0.408081 8 1.63726 9.25 2.38221 9.25C2.68951 9.25 2.86643 8.3875 2.86643 8.14375C2.86643 7.85313 2.13079 7.23438 2.13079 6.025C2.13079 3.5125 4.03043 1.73125 6.48878 1.73125C8.60259 1.73125 10.167 2.94062 10.167 5.1625C10.167 6.82187 9.50585 9.93437 7.3641 9.93437C6.59121 9.93437 5.93006 9.37188 5.93006 8.56563C5.93006 7.38438 6.74951 6.24062 6.74951 5.02187C6.74951 2.95312 3.83487 3.32812 3.83487 5.82812C3.83487 6.35312 3.90006 6.93437 4.13286 7.4125C3.70451 9.26875 2.82919 12.0344 2.82919 13.9469C2.82919 14.5375 2.91299 15.1188 2.96886 15.7094C3.0744 15.8281 3.02163 15.8156 3.18304 15.7563C4.74744 13.6 4.69157 13.1781 5.39928 10.3562C5.78107 11.0875 6.76814 11.4812 7.55034 11.4812C10.8468 11.4812 12.3274 8.24688 12.3274 5.33125C12.3274 2.22813 9.66415 0.203125 6.7402 0.203125Z" fill="black"/>
