@@ -572,6 +572,10 @@ summary::-webkit-details-marker {
 .featured-image__button :hover path {
   fill: #F16D7F;
 }
+.featured-image img {
+  max-width: 600px;
+  min-width: 281px;
+}
 
 .collection {
   width: 100%;
@@ -596,7 +600,7 @@ summary::-webkit-details-marker {
   box-shadow: 10px 10px 10px #F1E4E6;
 }
 .women-collection__description {
-  width: 650px;
+  max-width: 650px;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -668,6 +672,8 @@ summary::-webkit-details-marker {
   align-items: center;
   gap: 30px;
   position: absolute;
+  flex-wrap: wrap;
+  justify-content: center;
   bottom: 130px;
 }
 .collection__items__container {
@@ -1201,6 +1207,12 @@ summary::-webkit-details-marker {
   .fetured-items__item:last-child {
     display: none;
   }
+  .women-collection {
+    width: 768px;
+  }
+  .collection__items__item:last-child {
+    display: none;
+  }
 }
 @media (max-width: 767px) {
   .nav-bar__none {
@@ -1300,5 +1312,20 @@ summary::-webkit-details-marker {
   }
   .clothing-section {
     width: 375px;
+  }
+  .collection__items {
+    bottom: -420px;
+  }
+  .subscribe-product {
+    margin-top: 490px;
+  }
+  .women-collection {
+    width: 375px;
+  }
+  .women-collection__description h2 {
+    margin-bottom: 31px;
+  }
+  .women-collection__description span {
+    margin-bottom: 31px;
   }
 }/*# sourceMappingURL=styles.css.map */
