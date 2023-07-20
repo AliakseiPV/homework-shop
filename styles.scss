@@ -671,7 +671,7 @@ summary::-webkit-details-marker {
     &__search-filter {
         position: absolute;
         left: -15px;
-        z-index: 1;
+        z-index: 2;
         padding: 15px;
         top: 37px;
         display: flex;
@@ -1072,7 +1072,7 @@ summary::-webkit-details-marker {
 .scale-in-ver-top {
     @include scale-in-ver-top;
 }
-@media (max-width: 1024px){
+@media (max-width: 1150px){
     .logo__text {
         font-size: 44px;
         line-height: 53px;
@@ -1100,6 +1100,18 @@ summary::-webkit-details-marker {
     }
     .subsctibe__item p{
         margin-bottom: 27px;
+    }
+    .bread-crumb__container {
+        margin: 0 16px;
+    }
+    .clothing-section {
+        width: 768px;
+    }
+    .clothing-section__search-filter {
+        left: 0px;
+    }
+    .fetured-items__item:last-child {
+        display: none;
     }
 }
 
@@ -1175,5 +1187,33 @@ summary::-webkit-details-marker {
     .dropdown-menu__container {
         gap: 10px;
         width: 100px;
+    }
+    .bread-crumb__container {
+        flex-direction: column;
+        gap: 32px;
+    }
+    .clothing-section__search-filter-summary-text {
+        display: none;
+    }
+    .clothing-section__search-filter {
+        svg {
+            width: 37px;
+            height: 25px;
+        }
+    }
+    .clothing-section__search-trends {
+        left: 98px;
+    }
+    .clothing-section__search-size {
+        left: 233px
+    }
+    .clothing-section__search-price {
+        left: 296px;
+    }
+    .clothing-section__search {
+        font-size: 12px;
+    }
+    .clothing-section {
+        width: 375px;
     }
 }
