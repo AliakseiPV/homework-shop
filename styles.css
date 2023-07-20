@@ -1047,7 +1047,6 @@ summary::-webkit-details-marker {
   line-height: normal;
 }
 .registration__name input {
-  width: 360px;
   border: 1px solid #A4A4A4;
   padding: 15px;
 }
@@ -1087,7 +1086,6 @@ summary::-webkit-details-marker {
   line-height: normal;
 }
 .registration__details input {
-  width: 360px;
   border: 1px solid #A4A4A4;
   padding: 15px;
 }
@@ -1128,7 +1126,7 @@ summary::-webkit-details-marker {
   line-height: normal;
 }
 .registration__info p {
-  width: 652px;
+  max-width: 652px;
   font-size: 24px;
   font-style: normal;
   font-weight: 300;
@@ -1224,6 +1222,19 @@ summary::-webkit-details-marker {
   }
   .cart__form {
     flex-direction: row;
+  }
+  .registration {
+    gap: 22px;
+    margin: 0 16px;
+  }
+  .registration__info h1 {
+    font-size: 16px;
+  }
+  .registration__info p {
+    font-size: 16px;
+  }
+  .registration__item span {
+    font-size: 16px;
   }
 }
 @media (max-width: 767px) {
@@ -1372,5 +1383,10 @@ summary::-webkit-details-marker {
     gap: 48px;
     margin-top: 39px;
     margin-bottom: 96px;
+  }
+  .registration {
+    flex-direction: column;
+    align-items: center;
+    margin: 0 9px;
   }
 }/*# sourceMappingURL=styles.css.map */
