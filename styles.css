@@ -891,11 +891,16 @@ summary::-webkit-details-marker {
   display: flex;
   flex-direction: column;
   gap: 40px;
+  align-items: center;
 }
 .cart__merchendies {
+  width: 734px;
   display: flex;
   position: relative;
   box-shadow: 10px 10px 10px rgba(186, 186, 186, 0.21);
+}
+.cart__merchendies img {
+  max-width: 260px;
 }
 .cart__merchendies-info {
   display: flex;
@@ -903,7 +908,7 @@ summary::-webkit-details-marker {
   padding: 22px 32px 62px;
 }
 .cart__merchendies-info h1 {
-  width: 262px;
+  max-width: 262px;
   font-size: 24px;
   font-style: normal;
   font-weight: 400;
@@ -926,6 +931,7 @@ summary::-webkit-details-marker {
   display: flex;
   justify-content: space-between;
   margin-top: 32px;
+  gap: 48px;
 }
 .cart__buttons button {
   width: 235px;
@@ -1213,6 +1219,12 @@ summary::-webkit-details-marker {
   .collection__items__item:last-child {
     display: none;
   }
+  .cart {
+    flex-direction: column;
+  }
+  .cart__form {
+    flex-direction: row;
+  }
 }
 @media (max-width: 767px) {
   .nav-bar__none {
@@ -1327,5 +1339,38 @@ summary::-webkit-details-marker {
   }
   .women-collection__description span {
     margin-bottom: 31px;
+  }
+  .cart__merchendies {
+    width: 357px;
+    height: 188px;
+  }
+  .cart__merchendies img {
+    width: 143px;
+    height: 188px;
+  }
+  .cart__merchendies-info h1 {
+    font-size: 16px;
+    margin-bottom: 25px;
+  }
+  .cart__merchendies-info ul {
+    gap: 4px;
+    font-size: 14px;
+  }
+  .cart__buttons {
+    gap: 9px;
+  }
+  .cart__buttons button {
+    font-size: 12px;
+    width: 175px;
+    height: 33px;
+  }
+  .cart__form {
+    flex-direction: column;
+    gap: 48px;
+  }
+  .cart {
+    gap: 48px;
+    margin-top: 39px;
+    margin-bottom: 96px;
   }
 }/*# sourceMappingURL=styles.css.map */
