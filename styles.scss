@@ -1092,6 +1092,8 @@ summary::-webkit-details-marker {
     }
     .catalog__container {
         gap: 19px;
+        margin-left: 5px;
+        margin-right: 5px;
     }
     .fetured-items__container {
         grid-template-columns: repeat(2, 1fr);
